@@ -1,8 +1,8 @@
 services:
     parse_api:
-      build: parse_dota
+      build: .
       env_file:
-        - parse_dota/.env
+        - .env
       depends_on:
         - mongo
       ports:
