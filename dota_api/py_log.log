@@ -1,0 +1,4 @@
+2024-02-27 00:08:46,816 INFO Получение информации об игроке
+2024-02-27 00:08:46,818 DEBUG Starting new HTTPS connection (1): api.opendota.com:443
+2024-02-27 00:08:47,351 DEBUG https://api.opendota.com:443 "GET /api/players/63070626/recentMatches HTTP/1.1" 200 None
+2024-02-27 00:08:47,351 INFO Информация об от игроке 63070626 получена

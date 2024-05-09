@@ -1,0 +1,9 @@
+version: 3
+
+tasks:
+  gen:
+    cmds:
+      - python -m grpc_tools.protoc -I./protos
+        --python_out=./protos/gen
+        --pyi_out=./protos/gen
+        --grpc_python_out=./protos/gen ./protos/proto/*.proto

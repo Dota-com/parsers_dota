@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package dota_players_info;
+
+service ApiDotaPlayersInfo {
+  rpc GetPlayerInfo (PlayerIdRequests) returns (PlayerInfoResponse);
+
+}
+
+message PlayerIdRequests {
+  int64 Id = 1;
+}
+
+message PlayerInfoResponse {
+  bool StatusFetchInfo = 1;
+}
