@@ -5,6 +5,8 @@ services:
         - .env
       depends_on:
         - mongo
+      volumes:
+        - ./:/parse
       ports:
         - 8001:8000
 #      develop:

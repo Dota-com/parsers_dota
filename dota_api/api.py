@@ -45,13 +45,18 @@ class GetPlayerMatch:
             return False
 
 
+# Айдишники игроков
 # 137129583
 # yatoro 321580662
 
-# a = GetPlayerMatch(63070626)
-# start = time.time()
-# b = PlayerData(**a.get_information_about_player(f"/players/{a.player_id}"))
-# print(b)
+a = GetPlayerMatch(63070626)
+start = time.time()
+#PlayerData это pydantic модель, можно убрать, он нужен для типизации
+# a.get_information_about_player(f"/players/{a.player_id})
+b = PlayerData(**a.get_information_about_player(f"/players/{a.player_id}"))
+print(b)
+
+
 # b = a.get_information_about_player(f"/players/{a.player_id}/recentMatches")
 # print(a.get_information_about_player(f"/players/{a.player_id}/wl"))
 # print(b)
